@@ -1,0 +1,108 @@
+@import '../base/variables';
+@import '../utilities/mixins';
+/* --- 
+    PAGINA INDEX
+--- */
+
+.banner{
+    @include banner('../img/banner1.jpg');
+} 
+ 
+.post-one{
+    height: 80rem;
+    background: $primary-color;
+
+    @include sm{
+        height: 84rem;
+    }
+
+    @include lg {
+        height: 56rem;
+    }
+    
+    &__content-img {
+        @include centrarContenido;
+        margin: 5rem 2rem;
+        img {
+            @include rotarImg(-10deg);
+        }
+    }
+
+    &__content-texts {
+        text-align: center;
+
+        p {
+            width: 80%;
+            margin: 2rem auto;
+            line-height: 150%;
+            color: $primary-color-text;
+        }
+
+        @include lg {
+            text-align: left;
+            
+            h2 {
+                margin-top: 8rem;
+            }
+
+            p {
+                margin-left: 0;
+            }
+        }
+    } 
+}
+
+
+.post-two {
+    height: 78rem;
+    //background: $withe;
+
+    @include sm{
+        height: 84rem;
+    }
+
+    @include lg {
+        height: 56rem;
+    }
+
+    &__content-img {
+        @include centrarContenido;
+        margin: 5rem 2rem;
+        img {
+            @include rotarImg(10deg);
+        }
+        order: 1;
+
+        @include lg {
+            order: 2;
+        }
+    }
+
+    &__content-texts {
+        text-align: center;
+        order: 2;
+        p {
+            width: 80%;
+            margin: 2rem auto;
+            line-height: 150%;
+            color: $primary-color-text;
+        }
+
+        @include lg {
+            text-align: left;
+            
+            h2 {
+                margin-top: 8rem;
+            }
+
+            p {
+                margin-left: 0;
+            }
+            order: 1;
+        }
+    }
+}
+
+/* --- 
+    FIN PAGINA INDEX
+--- */

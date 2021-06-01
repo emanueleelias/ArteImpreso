@@ -1,0 +1,75 @@
+@import '../base/variables';
+@import '../utilities/mixins';
+@import '../base/normalize';
+
+/* --- 
+    PAGINA CONTACTOS
+--- */
+
+.banner4 {
+    @include banner('../img/banner4.jpg');
+}
+
+.contacto {
+    @include lg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contacto__textos {
+    width: 60%;
+    margin: 1rem auto;
+    text-align: center;
+
+    @include lg {
+        width: 85%;
+        text-align: left;
+    }
+
+    hr {
+        border: 0px;
+        width: 20%;
+        height: .2rem;
+        border-radius: 1rem;
+        background-color: #523A34;
+
+        @include lg {
+            margin: 2rem 0;
+        }
+    }
+
+    p {
+        color: $primary-color-text;
+        margin-left: .5rem;
+        margin-bottom: 4rem;
+    }
+
+    &-correo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+
+        @include lg {
+            justify-content: start;
+        }
+
+        i {
+            font-size: 3rem;
+            color: $accent-color;
+            margin-bottom: 4rem;
+        }
+
+        p {
+            color: $primary-color-text;
+            font-weight: 200;
+        }
+    }
+}
+
+/* --- 
+    FIN PAGINA CONTACTOS
+--- */

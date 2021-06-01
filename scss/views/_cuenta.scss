@@ -1,0 +1,20 @@
+ @import '../utilities/mixins';
+ @import '../base/variables'
+;
+/* --- 
+    PAGINA CUENTA
+--- */
+
+.banner3 {
+    @include banner('../img/banner3.jpg');
+}
+
+@include lg {
+    .form__Button--cuenta {
+        margin-left: 1rem;
+    }
+}
+
+/* --- 
+    FIN PAGINA CUENTA
+--- */

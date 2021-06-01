@@ -1,0 +1,15 @@
+@import '../utilities/mixins';
+@import '../components/cards';
+@import '../base/variables';
+
+/* --- 
+    PAGINA NUESTRO TRABAJO
+--- */
+
+.banner2 {
+    @include banner('../img/banner2.jpg');
+} 
+
+/* --- 
+    FIN PAGINA NUESTRO TRABAJO
+--- */

@@ -1,0 +1,84 @@
+@import '../base/variables';
+
+/* --- 
+    FORMULARIOS
+--- */
+
+.form {
+    width: 80%;
+    margin: 5rem auto;
+
+    @include sm {
+        width: 60%;
+    }
+
+    @include lg {
+        width: 90%;
+    }
+
+    &__fieldset {
+        
+        border: none;
+        
+        &-legend {
+            color: $accent-color;
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+    }
+    
+    &__button {
+        margin-top: 2rem;
+        text-align: center;
+        input {
+            color: $withe;
+        }
+
+        @include lg {
+            text-align: start;
+        }
+    }
+}
+
+.fields {
+
+    &__field {
+        span {
+            color: red;
+        }
+    
+        label {
+            display: block;
+            margin: 3rem 0 .5rem 0;
+            width: 100%;
+            font-weight: 500;
+        }
+    
+        input {
+            border-radius: .5rem;
+            border: .1rem solid hsl(12, 22%, 45%);
+            height: 3rem;
+            width: 100%;
+            &::placeholder {
+                padding-left: 1rem;
+            }
+        }
+    
+        textarea {
+            border-radius: .5rem;
+            border: .1rem solid hsl(12, 22%, 45%);
+            height: 8rem;
+            width: 100%;
+            resize: none;
+            &::placeholder {
+                padding: .8rem 1rem;
+            }
+        }
+    }
+}
+
+/* --- 
+    FIN FORMULARIOS
+--- */

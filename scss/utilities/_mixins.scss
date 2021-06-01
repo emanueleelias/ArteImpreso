@@ -1,0 +1,101 @@
+@import '../base/variables';
+
+
+/* --- 
+    MIXINS
+--- */
+
+//Centrar contenido con flexbox
+@mixin centrarContenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Utilidad para colocar banners
+@mixin banner($imgBanner) {
+    height: 100vh;
+    background: url($imgBanner) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+//Utilidad para rotar imagenes
+@mixin rotarImg($grados) {
+    transform: rotate($grados);
+}
+
+//Breakpoint mixins
+@mixin xxs {
+    @media (max-width: 280px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: #{$screen-xs-max}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+//Generador de grilla
+@mixin gridGenerator($breakpoint, $offset: false, $ordering: false, $hidding: false) {
+    
+    //Columnas
+    @for $column from 1 to $columns-number+1 {
+        .col-#{$breakpoint}-#{$column} {
+            // flex-basis: percentage($column / $columns-number);
+            width: (100% * $column) / $columns-number;
+        }
+    }
+
+    //compensanción de columnas
+    @if $offset {
+        @for $column from 1 to $columns-number+1 {
+            .col-#{$breakpoint}-offset-#{$column} {
+                margin-left: (100% * $column) / $columns-number;
+            }
+        }
+    }
+
+    //ordenación
+    @if $ordering {
+        .col-#{$breakpoint}-first {
+            order: -1;
+        }
+        
+        .col-#{$breakpoint}-last {
+            order: 1;
+        }
+    }
+
+    //Ocultación de elementos
+    @if $hidding {
+        .#{$breakpoint}-hide {
+            display: none;
+        }
+    }
+}
+
+/* --- 
+    FIN MIXINS
+--- */

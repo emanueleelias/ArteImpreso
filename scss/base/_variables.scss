@@ -1,0 +1,37 @@
+/* ---
+    VARIABLES
+--- */
+
+//Paleta de colores
+$primary-color: #F2DD6E;
+$primary-color-dark: #E6C27E;
+$primary-color-light: #FFE7A8;
+$accent-color: #523A34;//#E69E63;
+$primary-color-text: #212121;//listo
+$divider-color: #BDBDBD;//listo
+$secondary-color-text: #6E7076;//listo
+$withe: #f5f4f5;
+
+
+//Destructuring Títutlos
+$titles: "xs" 1.6rem 200 150%, "xs-bold" 1.8rem 700, "md" 2rem 300 150%, "md-bold" 2.2rem 700, "lg" 2.4rem 400 150%, "lgBold" 2.4rem 700 150%, "xl" 3.2rem 500 150%, "xxl" 4rem 600 150%, "xxxl" 4.4rem 700 150%;
+
+//Destructuring fondos de pantalla - imágenes
+$bgImg: "uno" '../img/banner1.jpg', "dos" '../img/banner2.jpg', "tres" '../img/banner3.jpg', "cuatro" '../img/banner4.jpg', "cinco" '../img/banner5.jpg'; 
+
+//Destructuring fondos de un solo color
+$bgColor: "light" $primary-color-dark, "dark" $primary-color-text, "marfil" $primary-color-light, "accent" $accent-color, "primary" $primary-color, "withe" $withe;
+
+//Variables para el sistema grid
+$container-max-width: 115rem;//84rem
+$gutter: 1rem;
+$columns-number: 12;//Columnas 
+//Breakpoints
+$screen-xs-max: 767px;// Small devices
+$screen-sm-min: 768px;// Medium devices
+$screen-md-min: 992px;// Large devices
+$screen-lg-min: 1200px;// Extra large devices
+
+/* ---
+    FIN VARIABLES
+--- */

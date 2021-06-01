@@ -1,0 +1,84 @@
+@import '../base/variables';
+@import '../utilities/mixins';
+
+/* --- 
+    PAGINA PRODUCTOS
+--- */
+
+.bg-products {
+    //background: $withe;
+    background: linear-gradient(to bottom, $withe 80%, $divider-color);
+}
+
+.banner5 {
+    @include banner('../img/banner5.jpg');
+}
+
+
+.galeria {
+    margin: 5rem auto;
+    margin-bottom: 15rem;
+    padding: auto 1rem;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 1em;
+        margin: auto 1rem;
+    }
+}
+
+.cuadro{
+    position: relative;
+
+    &__titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background: rgba(82, 58, 52, 0.4);
+        color: $primary-color-light;
+        text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.5);
+        /* Posición del texto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover, :focus {
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        line-height: 0;
+        overflow: hidden;
+
+        img {
+            filter: blur(0px);
+            transition: filter 0.3s ease-in;
+            transform: scale(1.1);
+
+            &:hover, :focus {
+                filter: blur(10px);
+            }
+        }   
+    }
+}
+
+@media (hover: none) { 
+    .cuadro__titulo {
+        opacity: 1;
+    }
+
+    .cuadro__img img {
+        filter: blur(2px);
+    }
+}

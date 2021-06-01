@@ -1,0 +1,41 @@
+@import '../base/variables';
+
+/* --- 
+    UTILIDADES
+--- */
+
+//Confguración de imagenes
+.img {
+    height: auto;
+    max-width: 100%;
+}
+
+//Utilidad para los fondos en imagenes
+@each $name, $img in $bgImg {
+    .bg-img-#{$name} {
+        height: 100vh;
+        background: url($img) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+//Utilidad para los fondos en color
+@each $name, $color in $bgColor {
+    .bg-color-#{$name} {
+        background: $color;
+    }
+}
+
+
+.tituloH2 {
+    text-align: center;
+    margin: 7rem;
+    color: $accent-color;
+    font-size: 4rem;
+}
+
+/* --- 
+    FIN UTILIDADES
+--- */
