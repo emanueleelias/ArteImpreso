@@ -31,9 +31,13 @@
 
 .tituloH2 {
     text-align: center;
-    margin: 7rem;
+    margin: 7rem auto;
     color: $accent-color;
     font-size: 4rem;
+
+    @include xs-min {
+        font-size: 2.8rem;
+    }
 }
 
 /* --- 

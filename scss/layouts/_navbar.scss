@@ -120,7 +120,7 @@
   top: 10px;
 }
 
-@media (max-width: 280px) {
+@include xs-max {
   .navbar .logo a {
   
     h1 {
@@ -132,8 +132,11 @@
       }
     }
   }
-
 }
+/* @media (max-width: 360px) {
+
+
+} */
 
 
 @media (max-width: 868px) {

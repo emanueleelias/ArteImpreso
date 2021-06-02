@@ -20,11 +20,16 @@
     margin-bottom: 15rem;
     padding: auto 1rem;
 
+    
+
     &__grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
         grid-gap: 1em;
         margin: auto 1rem;
+        @include xs-min {
+            margin: 2rem auto;
+        }
     }
 }
 

@@ -772,9 +772,15 @@ template {
 
 .tituloH2 {
   text-align: center;
-  margin: 7rem;
+  margin: 7rem auto;
   color: #523A34;
   font-size: 4rem;
+}
+
+@media (max-width: 280px) {
+  .tituloH2 {
+    font-size: 2.8rem;
+  }
 }
 
 /* --- 
@@ -1369,7 +1375,7 @@ template {
   top: 10px;
 }
 
-@media (max-width: 280px) {
+@media (max-width: 360px) {
   .navbar .logo a h1 {
     color: red;
     font-size: 3rem;
@@ -1380,6 +1386,10 @@ template {
   }
 }
 
+/* @media (max-width: 360px) {
+
+
+} */
 @media (max-width: 868px) {
   body.disabledScroll {
     overflow: hidden;
@@ -1802,6 +1812,12 @@ template {
       grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-gap: 1em;
   margin: auto 1rem;
+}
+
+@media (max-width: 280px) {
+  .galeria__grid {
+    margin: 2rem auto;
+  }
 }
 
 .cuadro {
@@ -2323,6 +2339,13 @@ template {
 @media (min-width: 1200px) {
   .contacto__textos hr {
     margin: 2rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto__textos hr {
+    margin: 2rem auto;
+    width: 90%;
   }
 }
 
