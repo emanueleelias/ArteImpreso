@@ -8,6 +8,7 @@
 //Centrar contenido con flexbox
 @mixin centrarContenido {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

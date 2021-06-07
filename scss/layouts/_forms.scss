@@ -61,9 +61,7 @@
             border: .1rem solid hsl(12, 22%, 45%);
             height: 3rem;
             width: 100%;
-            &::placeholder {
-                padding-left: 1rem;
-            }
+            text-indent: 1rem;
         }
     
         textarea {

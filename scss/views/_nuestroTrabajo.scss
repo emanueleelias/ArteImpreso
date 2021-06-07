@@ -9,7 +9,10 @@
 .banner2 {
     @include banner('../img/banner2.jpg');
 } 
-
+ 
+.container__cards  {
+    margin-bottom: 5rem;
+}
 /* --- 
     FIN PAGINA NUESTRO TRABAJO
 --- */

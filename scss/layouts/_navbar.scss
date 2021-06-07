@@ -6,7 +6,7 @@
   MENU DE NAVEAGACIÓN
 --- */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -20,7 +20,7 @@
 
 ::selection{
   background: rgba(0,123,255,0.3);
-}
+} */
 
 .content {
   max-width: 1250px;
@@ -84,7 +84,8 @@
 }
  
 .menu-list li a {
-  color: #fff;//$withe;
+  //color: #fff;//$withe;
+  color: $accent-color;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -99,7 +100,8 @@
 }
 
 .menu-list li a:hover {
-  color: $primary-color;
+  //color: $primary-color;
+  color: $primary-color-text;  
   background-size: 100% 2px; 
 }
 
@@ -125,18 +127,25 @@
   
     h1 {
       color: red;
-      font-size: 3rem;
+      font-size: 3.8rem;
       letter-spacing: 2px;
+        span {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+@media (max-width: 281px) {
+  .navbar .logo a {
+  
+    h1 {
+      font-size: 3rem;
         span {
         font-size: 2rem;
       }
     }
   }
-}
-/* @media (max-width: 360px) {
-
-
-} */
+} 
 
 
 @media (max-width: 868px) {

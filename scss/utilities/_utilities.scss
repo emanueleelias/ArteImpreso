@@ -14,7 +14,7 @@
 @each $name, $img in $bgImg {
     .bg-img-#{$name} {
         height: 100vh;
-        background: url($img) no-repeat;
+        background: url($img) no-repeat ;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -28,7 +28,7 @@
     }
 }
 
-
+//Utilidad para los titulos h2 en cada página
 .tituloH2 {
     text-align: center;
     margin: 7rem auto;
