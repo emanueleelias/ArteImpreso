@@ -6,8 +6,8 @@
     PAGINA CONTACTOS
 --- */
 
-.banner4 {
-    @include banner('../img/banner4.jpg');
+.contacto__content {
+    margin-bottom: 5rem;
 }
 
 .contacto {
@@ -58,6 +58,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 4rem;
+        margin-left: .8rem;
 
         @include lg {
             justify-content: start;
@@ -75,7 +76,6 @@
         }
     }
 }
-
 /* --- 
     FIN PAGINA CONTACTOS
 --- */

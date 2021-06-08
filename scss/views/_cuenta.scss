@@ -5,14 +5,14 @@
     PAGINA CUENTA
 --- */
 
-.banner3 {
-    @include banner('../img/banner3.jpg');
-}
-
 @include lg {
     .form__Button--cuenta {
         margin-left: 1rem;
     }
+}
+
+.cuenta__content {
+    margin-bottom: 5rem;
 }
 
 /* --- 

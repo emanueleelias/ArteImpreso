@@ -64,6 +64,12 @@
     }
 }
 
+@mixin sm-min {
+    @media (max-width: #{$screen-xs-max}) {
+        @content;
+    }
+}
+ 
 @mixin md {
     @media (min-width: #{$screen-md-min}) {
         @content;
