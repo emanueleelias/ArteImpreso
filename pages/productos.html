@@ -10,11 +10,12 @@
       <meta name="description" content="Entra a nuestra web y mira los cuadros que tenemos disponibles, encontras hermosos cuadros desde $350 pesos, ¿que estas esperando?">
       <link rel="preload" href="../css/main.css as="styles">
       <link href="../css/main.css" rel="stylesheet">   
+      <link rel="stylesheet" href="../css/aos.css">
       <script src="https://kit.fontawesome.com/10fd8d61f9.js" crossorigin="anonymous"></script>
       <title>Productos - Arte Impreso | Cuadros impresos en 3D</title>
   </head>
      
-  <body class="bg-products">
+  <body>
  
     <nav class="navbar"> <!-- Menu de navegación -->
       <div class="content">
@@ -37,7 +38,9 @@
       </div>
     </nav>
 
-    <div class="bg-img-cinco"></div>
+    <div class="bg-img-cinco hero">
+      <h2 data-aos="fade-down" data-aos-duration="1000">¡Que tus espacios sean autenticos!</h2>
+    </div>
 
     <section class="container galeria">    
       <div class="tituloH2">
@@ -132,6 +135,9 @@
     </footer>
 
     <script src="../js/app.js"></script>
-
+    <script src="../js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

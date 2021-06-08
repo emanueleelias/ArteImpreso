@@ -8,13 +8,13 @@
      
 .footer {
     background: $primary-color;
-
-    height: 15rem;
+    height: 22rem;
     text-align: center;
+    @include centrarContenido;
 
     .wrapper {
         display: inline-flex;
-        margin: 2rem 0;
+        margin: 1.8rem 0;
 
         .icono {
             margin: 2rem 20px 0 20px;

@@ -5,16 +5,6 @@
     PAGINA PRODUCTOS
 --- */
 
-.bg-products {
-    //background: $withe;
-    background: linear-gradient(to bottom, $withe 80%, $divider-color);
-}
-
-.banner5 {
-    @include banner('../img/banner5.jpg');
-}
-
-
 .galeria {
     margin: 5rem auto;
     margin-bottom: 15rem;
