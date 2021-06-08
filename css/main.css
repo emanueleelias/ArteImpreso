@@ -888,6 +888,77 @@ template {
 /* ---
     FIN VARIABLES
 --- */
+/* ---
+    VARIABLES
+--- */
+/* ---
+    FIN VARIABLES
+--- */
+/* --- 
+    MIXINS
+--- */
+/* --- 
+    FIN MIXINS
+--- */
+/* --- 
+    HERO
+--- */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10vw;
+  color: #f5f4f5;
+}
+
+.hero h2 {
+  position: relative;
+  font-size: 3rem;
+  padding: 2rem;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 20px 0;
+}
+
+.hero h2::before, .hero h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+
+.hero h2::before {
+  left: 0;
+  border-bottom: 6px solid #fff;
+}
+
+.hero h2::after {
+  right: 0;
+  border-top: 6px solid #fff;
+}
+
+/* --- 
+    FIN HERO
+--- */
+/* ---
+    VARIABLES
+--- */
+/* ---
+    FIN VARIABLES
+--- */
 /* --- 
     FORMULARIOS
 --- */
@@ -1619,53 +1690,6 @@ template {
 /* --- 
     PAGINA INDEX
 --- */
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10vw;
-  color: #f5f4f5;
-}
-
-.hero h2 {
-  position: relative;
-  font-size: 3rem;
-  padding: 2rem;
-  font-weight: 500;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  letter-spacing: 2px;
-  border-radius: 20px 0;
-}
-
-.hero h2::before, .hero h2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 50%;
-}
-
-.hero h2::before {
-  left: 0;
-  border-bottom: 6px solid #fff;
-}
-
-.hero h2::after {
-  right: 0;
-  border-top: 6px solid #fff;
-}
-
 .post-one {
   height: 80rem;
 }
@@ -1719,7 +1743,7 @@ template {
   .post-one__content-texts {
     text-align: left;
   }
-  .post-one__content-texts h2 {
+  .post-one__content-texts h3 {
     margin-top: 8rem;
   }
   .post-one__content-texts p {
@@ -1800,7 +1824,7 @@ template {
         -ms-flex-order: 1;
             order: 1;
   }
-  .post-two__content-texts h2 {
+  .post-two__content-texts h3 {
     margin-top: 8rem;
   }
   .post-two__content-texts p {
