@@ -1045,6 +1045,12 @@ template {
   right: 0;
 }
 
+@media (max-width: 767px) {
+  .heroTwo__primary div svg, .heroTwo__secondary div svg {
+    display: none;
+  }
+}
+
 .heroTwo__primary h2, .heroTwo__secondary h2 {
   position: relative;
   width: 45%;
@@ -1912,7 +1918,7 @@ template {
 
 .newsletter__div form {
   z-index: 2;
-  width: 60rem;
+  width: 80%;
 }
 
 .newsletter__div button {

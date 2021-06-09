@@ -102,6 +102,10 @@
         position: absolute;
         top: 0;
         right: 0;
+
+        @include sm-min {
+            display: none;
+        }
     }
     
     h2 {
@@ -152,7 +156,7 @@
     &__primary, &__secondary {
         @extend %hero;
     }
-
+    
     &__primary {
         p {
             position: relative;
