@@ -156,7 +156,7 @@
     &__primary, &__secondary {
         @extend %hero;
     }
-    
+
     &__primary {
         p {
             position: relative;
@@ -171,6 +171,36 @@
 .heroTwo {
     &__primary, &__secondary {
         @extend %heroTwo;
+        h2 {
+            @include sm-min {
+                color: $withe;
+                span {
+                    background-color: rgba(0,0,0,0.7);
+                }
+            }
+        }
+
+        p {
+            @include sm-min {
+                color: $withe;
+                span {
+                    background-color: rgba(0,0,0,0.7);
+                }
+            }
+        }
+
+        .elemento {
+            @include sm-min {
+                .animatedColor {
+                    color: $accent-color;
+                &:hover {
+                    color: $withe;
+                }
+            } 
+            }
+
+        }
+
     }
 
     &__secondary {
@@ -182,9 +212,6 @@
 
         h2 {
             text-align: center;
-            @include sm-min {
-                color: $withe;
-            }
         }
 
         
@@ -192,9 +219,6 @@
             padding: 0;
             padding-left: -3rem;
             text-align: center;
-            @include sm-min {
-                color: $withe;
-            }
         }
     }
 }
