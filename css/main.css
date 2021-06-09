@@ -772,7 +772,7 @@ template {
 
 .tituloH3 {
   text-align: center;
-  margin: 10rem auto;
+  margin: 8rem auto 4rem auto;
   color: #523A34;
   font-size: 4rem;
   text-shadow: 0px 2px 2px #969696;
@@ -2100,8 +2100,7 @@ template {
     PAGINA PRODUCTOS
 --- */
 .galeria {
-  margin: 5rem auto;
-  margin-bottom: 15rem;
+  margin: 8rem auto 15rem auto;
   padding: auto 1rem;
 }
 
