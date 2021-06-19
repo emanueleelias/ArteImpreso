@@ -1,32 +1,31 @@
-
-
+/* Efectos navbar */
 const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu-list");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 
-
-menuBtn.onclick = ()=>{
+menuBtn.onclick = () => {
   menu.classList.add("active");
   menuBtn.classList.add("hide");
   cancelBtn.classList.add("show");
   body.classList.add("disabledScroll");
 }
 
-cancelBtn.onclick = ()=>{
+cancelBtn.onclick = () => {
   menu.classList.remove("active");
   menuBtn.classList.remove("hide");
   cancelBtn.classList.remove("show");
   body.classList.remove("disabledScroll");
 }
 
-window.onscroll = ()=>{
+window.onscroll = () => {
   this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
-$(document).ready(function() {
-  $('a[href^="#"]').click(function() {
+/* Efecto de slide suave para flecha hacia abajo */
+$(document).ready(function () {
+  $('a[href^="#"]').click(function () {
     var destino = $(this.hash);
     if (destino.length == 0) {
       destino = $('a[name="' + this.hash.substr(1) + '"]');
@@ -34,7 +33,9 @@ $(document).ready(function() {
     if (destino.length == 0) {
       destino = $('html');
     }
-    $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+    $('html, body').animate({
+      scrollTop: destino.offset().top
+    }, 500);
     return false;
   });
 });

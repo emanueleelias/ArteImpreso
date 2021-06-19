@@ -2,40 +2,30 @@
 @import '../base/variables';
 @import '../utilities/mixins';
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
 /* --- 
   MENU DE NAVEAGACIÓN
 --- */
 
-/* ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::selection{
-  background: rgba(0,123,255,0.3);
-} */
-
-.content {
-  max-width: 1250px;
-  margin: auto;
-  padding: 0px 30px;
-}
-
+//Principal
 .navbar {
   position: fixed;
   z-index: 5;
   width: 100%;
   padding: 25px 0;
   transition: all 0.3s ease;
+
+  .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
+//Sticky
 .navbar.sticky {
   padding: 10px 0;
   background: $primary-color-text;
@@ -50,15 +40,9 @@
   }
 }
 
-.navbar .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
+//Logo
 .navbar .logo a {
   text-decoration: none;
-
   h1 {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
     font-family: 'Dawning of a New Day', cursive;
@@ -75,36 +59,34 @@
   }
 }
 
+//Lista
 .navbar .menu-list {
   display: inline-flex;
+  li {
+    list-style: none;
+
+    a {
+      color: $accent-color;
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 25px;
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 50% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $primary-color-text;  
+        background-size: 100% 2px; 
+      }
+    }
+  }
 }
 
-.menu-list li {
-  list-style: none;
-}
- 
-.menu-list li a {
-  //color: #fff;//$withe;
-  color: $accent-color;
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
-  text-decoration: none;
-
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .3s;
-  transition: all 0.3s ease;
-}
-
-.menu-list li a:hover {
-  //color: $primary-color;
-  color: $primary-color-text;  
-  background-size: 100% 2px; 
-}
-
+//Iconos
 .icon {
   color: $primary-color-text;
   font-size: 20px;
@@ -122,9 +104,9 @@
   top: 10px;
 }
 
+//Media queries
 @include xs-max {
   .navbar .logo a {
-  
     h1 {
       color: red;
       font-size: 3.8rem;
@@ -135,6 +117,7 @@
     }
   }
 }
+
 @media (max-width: 281px) {
   .navbar .logo a {
   
@@ -146,7 +129,6 @@
     }
   }
 } 
-
 
 @media (max-width: 868px) {
 

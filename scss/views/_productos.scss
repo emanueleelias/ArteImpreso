@@ -9,9 +9,6 @@
     margin: 5rem auto;
     margin-bottom: 15rem;
     padding: auto 1rem;
-
-    
-
     &__grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
