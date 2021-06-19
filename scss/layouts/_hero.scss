@@ -14,7 +14,6 @@
 
     @include sm-min {
         width: 100%;
-        //margin-bottom: -11rem;
     }
 
     .animatedColor {
@@ -102,6 +101,10 @@
         position: absolute;
         top: 0;
         right: 0;
+
+        @include sm-min {
+            display: none;
+        }
     }
     
     h2 {
@@ -169,6 +172,21 @@
         @extend %heroTwo;
     }
 
+    &__primary {
+        @include sm-min {
+            h2 {
+                color: white;
+                span {
+                    background-color: rgba(0,0,0,0.7);
+                }
+            }
+            
+            p {
+                display: none;
+            }
+        }
+    }
+
     &__secondary {
         align-items: flex-end;
 
@@ -177,19 +195,32 @@
         }
 
         h2 {
-            text-align: center;
+            text-align: right;
             @include sm-min {
+                text-align: center;
                 color: $withe;
+                span {
+                    background-color: rgba(0,0,0,0.7);
+                }
             }
         }
 
         
         p {
-            padding: 0;
-            padding-left: -3rem;
-            text-align: center;
+            text-align: right;
             @include sm-min {
-                color: $withe;
+                display: none;
+            }
+        }
+
+        @include sm-min {
+            .elemento {
+                .animatedColor {
+                    color: $accent-color;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
             }
         }
     }

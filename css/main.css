@@ -774,8 +774,7 @@ template {
   text-align: center;
   margin: 10rem auto;
   color: #523A34;
-  font-size: 4rem;
-  text-shadow: 0px 2px 2px #969696;
+  font-size: 3.8rem;
 }
 
 @media (max-width: 280px) {
@@ -1045,6 +1044,12 @@ template {
   right: 0;
 }
 
+@media (max-width: 767px) {
+  .heroTwo__primary div svg, .heroTwo__secondary div svg {
+    display: none;
+  }
+}
+
 .heroTwo__primary h2, .heroTwo__secondary h2 {
   position: relative;
   width: 45%;
@@ -1098,6 +1103,18 @@ template {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .heroTwo__primary h2 {
+    color: white;
+  }
+  .heroTwo__primary h2 span {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .heroTwo__primary p {
+    display: none;
+  }
+}
+
 .heroTwo__secondary {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -1111,24 +1128,35 @@ template {
 }
 
 .heroTwo__secondary h2 {
-  text-align: center;
+  text-align: right;
 }
 
 @media (max-width: 767px) {
   .heroTwo__secondary h2 {
+    text-align: center;
     color: #f5f4f5;
+  }
+  .heroTwo__secondary h2 span {
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 
 .heroTwo__secondary p {
-  padding: 0;
-  padding-left: -3rem;
-  text-align: center;
+  text-align: right;
 }
 
 @media (max-width: 767px) {
   .heroTwo__secondary p {
-    color: #f5f4f5;
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroTwo__secondary .elemento .animatedColor {
+    color: #523A34;
+  }
+  .heroTwo__secondary .elemento .animatedColor:hover {
+    color: #F2DD6E;
   }
 }
 
