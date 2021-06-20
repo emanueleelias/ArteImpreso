@@ -37,6 +37,12 @@
   }
   .menu-list li a {
     color: $withe;
+    @include sm-min {
+      color: $accent-color;
+    }
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 

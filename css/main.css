@@ -1550,6 +1550,16 @@ template {
   color: #f5f4f5;
 }
 
+@media (max-width: 767px) {
+  .navbar.sticky .menu-list li a {
+    color: #523A34;
+  }
+}
+
+.navbar.sticky .menu-list li a:hover {
+  color: #F2DD6E;
+}
+
 .navbar .logo a {
   text-decoration: none;
 }
