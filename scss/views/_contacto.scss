@@ -29,6 +29,10 @@
         text-align: left;
     }
 
+    @include sm-min {
+        width: 75%;
+    }
+
     hr {
         border: 0px;
         width: 20%;
@@ -44,7 +48,6 @@
             margin: 2rem auto;
             width: 90%;
         }
-        
     }
 
     p {

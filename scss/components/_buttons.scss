@@ -6,13 +6,18 @@
 --- */
 
 %button {
-    height: 4rem;
+    height: 4.2rem;
     min-width: 150px;
     border: none;
     border-radius: 5rem;
     margin: .5rem 0;
     box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
     transition: all 200ms ease-out;
+
+    @include sm-min {
+        height: 5rem;
+    }
+
     &:hover {
         cursor: pointer;
     }
@@ -25,9 +30,11 @@
 }
 
 .button {
+
     &__primary, &__secondary, &__primary-dark {
         @extend %button;
     }
+
     &__primary {
         background: $accent-color;
         input {

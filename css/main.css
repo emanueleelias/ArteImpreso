@@ -809,7 +809,7 @@ template {
     BOTONES
 --- */
 .button__primary, .button__secondary, .button__primary-dark {
-  height: 4rem;
+  height: 4.2rem;
   min-width: 150px;
   border: none;
   border-radius: 5rem;
@@ -818,6 +818,12 @@ template {
           box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+}
+
+@media (max-width: 767px) {
+  .button__primary, .button__secondary, .button__primary-dark {
+    height: 5rem;
+  }
 }
 
 .button__primary:hover, .button__secondary:hover, .button__primary-dark:hover {
@@ -1042,6 +1048,7 @@ template {
   position: absolute;
   top: 0;
   right: 0;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -1240,22 +1247,8 @@ template {
   height: 8rem;
   width: 100%;
   resize: none;
-}
-
-.fields__field textarea::-webkit-input-placeholder {
-  padding: .8rem 1rem;
-}
-
-.fields__field textarea:-ms-input-placeholder {
-  padding: .8rem 1rem;
-}
-
-.fields__field textarea::-ms-input-placeholder {
-  padding: .8rem 1rem;
-}
-
-.fields__field textarea::placeholder {
-  padding: .8rem 1rem;
+  text-indent: 1rem;
+  padding-top: .4rem;
 }
 
 /* --- 
@@ -1593,7 +1586,8 @@ template {
   color: #523A34;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
   background-image: linear-gradient(currentColor, currentColor);
@@ -1926,8 +1920,8 @@ template {
 }
 
 .post-one__content-img img {
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
 }
 
 .post-one__content-texts {
@@ -2196,16 +2190,15 @@ template {
           filter: blur(10px);
 }
 
-@media (hover: none) {
-  .cuadro__titulo {
-    opacity: 1;
-  }
-  .cuadro__img img {
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-  }
-}
+/* @media (hover: none) { 
+    .cuadro__titulo {
+        opacity: 1;
+    }
 
+    .cuadro__img img {
+        filter: blur(2px);
+    }
+} */
 /* ---
     VARIABLES
 --- */
@@ -2640,6 +2633,12 @@ template {
   .contacto__textos {
     width: 85%;
     text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacto__textos {
+    width: 75%;
   }
 }
 

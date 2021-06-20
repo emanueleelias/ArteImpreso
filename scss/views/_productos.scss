@@ -20,7 +20,7 @@
     }
 }
 
-.cuadro{
+.cuadro {
     position: relative;
 
     &__titulo {
@@ -65,7 +65,7 @@
     }
 }
 
-@media (hover: none) { 
+/* @media (hover: none) { 
     .cuadro__titulo {
         opacity: 1;
     }
@@ -73,4 +73,4 @@
     .cuadro__img img {
         filter: blur(2px);
     }
-}
+} */
