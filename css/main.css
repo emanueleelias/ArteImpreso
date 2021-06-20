@@ -2171,7 +2171,7 @@ template {
           justify-content: center;
 }
 
-.cuadro__titulo:hover, .cuadro__titulo :focus {
+.cuadro__titulo:hover, .cuadro__titulo:focus {
   opacity: 1;
 }
 
@@ -2191,7 +2191,7 @@ template {
           transform: scale(1.1);
 }
 
-.cuadro__img img:hover, .cuadro__img img :focus {
+.cuadro__img img:hover, .cuadro__img img:focus {
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }

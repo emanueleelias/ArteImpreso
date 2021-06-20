@@ -44,7 +44,7 @@
         align-items: center;
         justify-content: center;
 
-        &:hover, :focus {
+        &:hover, &:focus {
             opacity: 1;
         }
     }
@@ -58,7 +58,7 @@
             transition: filter 0.3s ease-in;
             transform: scale(1.1);
 
-            &:hover, :focus {
+            &:hover, &:focus {
                 filter: blur(10px);
             }
         }   
