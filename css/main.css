@@ -1946,8 +1946,6 @@ template {
 .post-two {
   height: 80rem;
   background: #F2DD6E;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
 }
 
 @media (min-width: 768px) {

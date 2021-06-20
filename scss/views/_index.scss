@@ -5,7 +5,7 @@
     PAGINA INDEX
 --- */
  
-.post-one{
+.post-one {
     height: 80rem;
 
     @include sm{
@@ -52,7 +52,6 @@
 .post-two {
     height: 80rem;
     background: $primary-color;
-    scroll-snap-type: x mandatory;
 
     @include sm{
         height: 84rem;
