@@ -1920,8 +1920,8 @@ template {
 }
 
 .post-one__content-img img {
-  -webkit-transform: rotate(-9deg);
-          transform: rotate(-9deg);
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
 }
 
 .post-one__content-texts {
@@ -2153,7 +2153,6 @@ template {
   background: rgba(82, 58, 52, 0.4);
   color: #FFE7A8;
   text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.5);
-  /* Posición del texto */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2190,15 +2189,19 @@ template {
           filter: blur(10px);
 }
 
-/* @media (hover: none) { 
-    .cuadro__titulo {
-        opacity: 1;
-    }
+@media (hover: none) {
+  .cuadro__titulo {
+    opacity: 0;
+  }
+  .cuadro__img img {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
 
-    .cuadro__img img {
-        filter: blur(2px);
-    }
-} */
+/* --- 
+    FIN PAGINA PRODUCTOS
+--- */
 /* ---
     VARIABLES
 --- */

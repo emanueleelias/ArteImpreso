@@ -8,7 +8,7 @@
 .post-one {
     height: 80rem;
 
-    @include sm{
+    @include sm {
         height: 84rem;
     }
 
@@ -20,8 +20,7 @@
         @include centrarContenido;
         margin: 5rem 2rem;
         img {
-            @include rotarImg(-9deg);
-            
+            @include rotarImg(-8deg);
         }
     }
 
