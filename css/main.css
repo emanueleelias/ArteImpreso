@@ -1048,7 +1048,6 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  overflow: hidden;
 }
 
 @media (max-width: 767px) {
