@@ -2220,6 +2220,12 @@ th {
   min-width: 300px;
 }
 
+@media (max-width: 868px) {
+  .submenu:hover #carrito {
+    margin-right: .5rem;
+  }
+}
+
 .vacio {
   padding: 10px;
   background-color: crimson;
