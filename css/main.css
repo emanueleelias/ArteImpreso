@@ -2139,6 +2139,14 @@ th {
   border-bottom: 1px solid #E1E1E1;
 }
 
+@media (max-width: 868px) {
+  td,
+  th {
+    padding: 14px 3px;
+    margin: .2rem 0;
+  }
+}
+
 .carrito-compras {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2183,19 +2191,11 @@ th {
 }
 
 @media (max-width: 868px) {
-  /* .carrito-compras {
-    flex-direction: column;
-  } */
   .carrito-compras h3 {
     margin: 5rem 3rem;
     text-align: center;
     font-size: 2.8rem;
   }
-  /*
-  .submenu:hover #carrito {
-    display: flex;
-    text-align: right;
-  } */
 }
 
 .submenu {
@@ -2220,12 +2220,6 @@ th {
   min-width: 300px;
 }
 
-@media (max-width: 868px) {
-  .submenu:hover #carrito {
-    width: 370px;
-  }
-}
-
 .vacio {
   padding: 10px;
   background-color: crimson;
@@ -2241,6 +2235,12 @@ th {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+@media (max-width: 868px) {
+  .borrar-cuadro {
+    padding: 2px 7px;
+  }
 }
 
 .cuadro {
