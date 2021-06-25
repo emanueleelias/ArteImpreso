@@ -2126,14 +2126,15 @@ template {
 }
 
 @media (max-width: 280px) {
-  .galeria__grid {
+  .galeria .galeria__grid {
     margin: 2rem auto;
   }
 }
 
-td, th {
+td,
+th {
   margin: 1rem 0;
-  padding: 12px 15px;
+  padding: 14px 10px;
   text-align: center;
   border-bottom: 1px solid #E1E1E1;
 }
@@ -2143,11 +2144,11 @@ td, th {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carrito-compras h3 {
@@ -2182,16 +2183,19 @@ td, th {
 }
 
 @media (max-width: 868px) {
-  .carrito-compras {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  /* .carrito-compras {
     flex-direction: column;
-  }
+  } */
   .carrito-compras h3 {
-    margin: 5rem 0;
+    margin: 5rem 3rem;
     text-align: center;
+    font-size: 2.8rem;
   }
+  /*
+  .submenu:hover #carrito {
+    display: flex;
+    text-align: right;
+  } */
 }
 
 .submenu {
@@ -2208,12 +2212,18 @@ td, th {
   right: 0;
   top: 100%;
   z-index: 1;
-  background-color: #F8F7F1;
+  background-color: #f5f4f5;
   border: 1px solid #523A34;
   border-radius: 5px;
   padding: 20px;
   min-height: 400px;
   min-width: 300px;
+}
+
+@media (max-width: 868px) {
+  .submenu:hover #carrito {
+    width: 370px;
+  }
 }
 
 .vacio {
@@ -2251,32 +2261,32 @@ td, th {
   margin-bottom: 6px;
 }
 
-.cuadro .precio {
+.cuadro__info .precio {
   margin-top: 10px;
 }
 
-.cuadro .precio__desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.cuadro .precio p {
+.cuadro__info .precio p {
   font-weight: 700;
   font-size: 22px;
 }
 
-.cuadro .precio mark {
+.cuadro__info .precio mark {
   background: rgba(0, 0, 0, 0);
 }
 
-.cuadro .precio span {
+.cuadro__info .precio span {
   font-size: 18px;
   font-weight: 200;
   text-decoration: line-through;
+}
+
+.cuadro__info .precio .precio__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* --- 

@@ -15,7 +15,8 @@ function cargarEventListeners() {
   carrito.addEventListener('click', eliminarCuadro);
 
   //Vaciar carrito completo
-  vaciarCarritoBtn.addEventListener('click', () => {
+  vaciarCarritoBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     articulosCarrito = [];
     limpiarHTML();
   })
@@ -30,11 +31,11 @@ function agregarCuadro(e) {
     const cuadroSeleccionado = e.target.parentElement.parentElement.parentElement;
     leerDatosCuadro(cuadroSeleccionado);
   }
-  
 }
 
 //Eliminar cuadro de carrito
 function eliminarCuadro(e) {
+  e.preventDefault();
   if ( e.target.classList.contains('borrar-cuadro')) {
     const cuadroId = e.target.getAttribute('data-id');
     //Elimina del arreglo por el data-id
