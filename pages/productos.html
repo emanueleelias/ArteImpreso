@@ -7,10 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="nosnippet">
-  <meta name="keywords" content="impresión 3D, decoración, cuadros, cuadros impresos en 3D, diseño 3D, decoració de ambiente">
-  <meta name="description" content="Entra a nuestra web y mira los cuadros que tenemos disponibles, encontras hermosos cuadros desde $350 pesos, ¿que estas esperando?">
+  <meta name="keywords"
+    content="impresión 3D, decoración, cuadros, cuadros impresos en 3D, diseño 3D, decoració de ambiente">
+  <meta name="description"
+    content="Entra a nuestra web y mira los cuadros que tenemos disponibles, encontras hermosos cuadros desde $350 pesos, ¿que estas esperando?">
   <!-- links y scripts -->
-  <link rel="preload" href="../css/main.css as=" styles">
+  <!-- <link rel="preload" href="../css/main.css as=" styles"> -->
   <link href="../css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/aos.css">
   <script src="https://kit.fontawesome.com/10fd8d61f9.js" crossorigin="anonymous"></script>
@@ -54,119 +56,266 @@
 
   <div id="slide"></div>
 
+  
+  <div class="carrito-compras container">
+    <h3 data-aos="fade-up" data-aos-duration="600">Nuestros cuadros impresos en 3D</h3>
+
+    <ul>
+      <li class="submenu">
+        <i class="fas fa-shopping-cart"></i>
+        <div id="carrito">
+          <table id="lista-carrito">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          
+          <button class="button__secondary">
+            <a href="#" id="vaciar-carrito" class="button">Vaciar Carrito</a>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+
   <!-- Galeria -->
   <section class="container galeria">
 
-    <div class="tituloH3">
-      <h3 data-aos="fade-up" data-aos-duration="600">Nuestros cuadros impresos en 3D</h3>
-    </div>
+   
 
-    <div class="galeria__grid">
+    <div id="lista-cuadros" class="galeria__grid">
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Cuadro Floreros</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro1.jpg" alt="Cuadro de floreros impresos en 3D">
+        <img class="img" src="../img/cuadro1.jpg" alt="Cuadro 3 jarrones">
+        <div class="cuadro__info">
+          <h4>Cuadro 3 floreros</h4>
+          <p>Medidas: 50x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1200</span><mark>$800</mark></p>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="1">Agregar a carrito</a>
+          </button>
+      </article>
+
+      <article class="cuadro">
+        <img class="img" src="../img/cuadro2.jpg" alt="3 cuadros de animales">
+        <div class="cuadro__info">
+          <h4>Cuadro 3 animales</h4>
+          <p>Medidas: 30x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1800</span><mark>$900</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="2">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Cuadros animales del bosque</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro2.jpg" alt="3 cuadros de animales">
+        <img class="img" src="../img/cuadro3.jpg" alt="Cuadro escarabajo">
+        <div class="cuadro__info">
+          <h4>El escarabajo</h4>
+          <p>Medidas: 30x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1000</span><mark>$700</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="3">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">VW Escarabajo</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro3.jpg" alt="Cuadro de auto wolsvagen">
+        <img class="img" src="../img/cuadro4.jpg" alt="Cuadro de siervo">
+        <div class="cuadro__info">
+          <h4>Cuadro el siervo</h4>
+          <p>Medidas: 30x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1100</span><mark>$600</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="4">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Cuadro siervo</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro4.jpg" alt="Cuadro de un siervo">
+        <img class="img" src="../img/cuadro5.jpg" alt="Cuadro pez koi">
+        <div class="cuadro__info">
+          <h4>Cuadro pez dorado</h4>
+          <p>Medidas: 30x40 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$900</span><mark>$700</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="5">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Cuadro de un pez</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro5.jpg" alt="cuadro de un pez">
+        <img class="img" src="../img/cuadro6.jpg" alt="El guazón">
+        <div class="cuadro__info">
+          <h4>El guazón</h4>
+          <p>Medidas: 30x50 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1200</span><mark>$700</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="6">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">El Guazón</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro6.jpg" alt="Cuadro del Guazón">
+        <img class="img" src="../img/cuadro7.jpg" alt="Cuadro de flor">
+        <div class="cuadro__info">
+          <h4>Cuadro las flores</h4>
+          <p>Medidas: 30x50 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$800</span><mark>$600</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="7">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Flores primaverales</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro7.jpg" alt="Cuadro de flores">
+        <img class="img" src="../img/cuadro8.jpg" alt="Cuadro perrito tierno">
+        <div class="cuadro__info">
+          <h4>El cachorro</h4>
+          <p>Medidas: 30x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$800</span><mark>$700</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="8">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Tus mascota</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro8.jpg" alt="Cuadro de un perro">
+        <img class="img" src="../img/cuadro9.jpg" alt="Pura sangre">
+        <div class="cuadro__info">
+          <h4>Pura sangre</h4>
+          <p>Medidas: 50x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1500</span><mark>$1100</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="9">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Pura sangre</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro9.jpg" alt="Cuadro de un caballo">
+        <img class="img" src="../img/cuadro10.jpg" alt="Guitarras electricas">
+        <div class="cuadro__info">
+          <h4>Guitarras</h4>
+          <p>Medidas: 30x50 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$900</span><mark>$700</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="10">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Guitarras</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro10.jpg" alt="cuadro con mastil de guitarras">
+        <img class="img" src="../img/cuadro11.jpg" alt="Cuadro 1 vida más">
+        <div class="cuadro__info">
+          <h4>Una vida más</h4>
+          <p>Medidas: 50x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$900</span><mark>$600</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="11">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Hongo de vida</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro11.jpg" alt="Cuadro hongo de la vida">
+        <img class="img" src="../img/cuadro12.jpg" alt="Cuadro los Beatles">
+        <div class="cuadro__info">
+          <h4>The Beatles</h4>
+          <p>Medidas: 50x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1500</span><mark>$1100</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="12">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">The Beatles</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro12.jpg" alt="cuadro de los beatles">
+        <img class="img" src="../img/cuadro13.jpg" alt="Cuadro globo aerostático">
+        <div class="cuadro__info">
+          <h4>Globo y tierra</h4>
+          <p>Medidas: 40x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$700</span><mark>$600</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="13">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Volar alto</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro13.jpg" alt="Cuadro globo aerostatico y planeta tierra">
+        <img class="img" src="../img/cuadro14.jpg" alt="Cuadro de la creación">
+        <div class="cuadro__info">
+          <h4>La creación</h4>
+          <p>Medidas: 50x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1100</span><mark>$800</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="14">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
       <article class="cuadro">
-        <a class="cuadro__titulo" href="#">La creación</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro14.jpg" alt="Cuadro de manos tocandose - la creación">
+        <img class="img" src="../img/cuadro15.jpg" alt="3 cuadros de runas">
+        <div class="cuadro__info">
+          <h4>Las runas</h4>
+          <p>Medidas: 30x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1900</span><mark>1100</mark></p>
+          </div>
+          <button class="button__secondary">
+            <a class="agregar-carrito" href="#" role="button" data-id="15">Agregar a carrito</a>
+          </button>
         </div>
       </article>
 
-      <article class="cuadro">
-        <a class="cuadro__titulo" href="#">Runas</a>
-        <div class="cuadro__img">
-          <img class="img" src="../img/cuadro15.jpg" alt="cuadro x3 de runas">
-        </div>
-      </article>
     </div>
   </section> <!-- Fin sección de la galeria -->
 
@@ -197,7 +346,8 @@
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../js/app.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/carrito.js"></script>
   <script src="../js/aos.js"></script>
   <script>
     AOS.init({
