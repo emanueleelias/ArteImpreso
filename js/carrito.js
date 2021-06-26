@@ -1,5 +1,6 @@
-/* CARRITO DE COMPRAS */
 
+
+/* CARRITO DE COMPRAS */
 const carrito = document.querySelector('#carrito');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
@@ -19,17 +20,37 @@ function cargarEventListeners() {
     e.preventDefault();
     articulosCarrito = [];
     limpiarHTML();
-  })
+  });
+
+
 }
 
-
 //Funciones
-
 function agregarCuadro(e) {
   e.preventDefault();
   if (e.target.classList.contains('agregar-carrito')) {
     const cuadroSeleccionado = e.target.parentElement.parentElement.parentElement;
     leerDatosCuadro(cuadroSeleccionado);
+
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-bottom-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut",
+    }
+    toastr["success"]("Cuadro agregado al carrito.", "Arte Impreso");
+
   }
 }
 
