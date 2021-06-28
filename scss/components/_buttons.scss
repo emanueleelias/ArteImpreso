@@ -31,7 +31,7 @@
 
 .button {
 
-    &__primary, &__secondary, &__primary-dark {
+    &__primary, &__secondary, &__primary-dark, &__tertiary {
         @extend %button;
     }
 
@@ -49,6 +49,7 @@
 
     &__primary-dark {
         background: $accent-color;
+        min-width: 180px;
         &:hover {
             box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
             transform: translateY(6%);
@@ -58,6 +59,23 @@
     &__secondary {
         background: none;
         border: 2px solid $accent-color;
+        a {
+            color: $accent-color;
+        }
+        &:hover {
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+            transform: translateY(6%);
+            a {
+                color: $primary-color-text;
+                
+            }
+        }
+    }
+
+    &__tertiary {
+        background: none;
+        border: 2px solid $accent-color;
+        min-width: 180px;
         a {
             color: $accent-color;
         }

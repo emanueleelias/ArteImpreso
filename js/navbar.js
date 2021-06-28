@@ -24,6 +24,19 @@ window.onscroll = () => {
   this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
+//Resalta el link de la pagina en la que se esta posicionado
+$(function(){
+    // this will get the full URL at the address bar
+    var url = window.location.href; 
+
+    // passes on every "a" tag 
+    $("#main a").each(function() {
+            // checks if its the same on the address bar
+        if(url == (this.href)) { 
+            $(this).closest("li").addClass("active");
+        }
+    });
+});
 
 
 

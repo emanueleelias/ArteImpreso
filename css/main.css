@@ -808,7 +808,7 @@ template {
 /* --- 
     BOTONES
 --- */
-.button__primary, .button__secondary, .button__primary-dark {
+.button__primary, .button__secondary, .button__primary-dark, .button__tertiary {
   height: 4.2rem;
   min-width: 150px;
   border: none;
@@ -821,16 +821,16 @@ template {
 }
 
 @media (max-width: 767px) {
-  .button__primary, .button__secondary, .button__primary-dark {
+  .button__primary, .button__secondary, .button__primary-dark, .button__tertiary {
     height: 5rem;
   }
 }
 
-.button__primary:hover, .button__secondary:hover, .button__primary-dark:hover {
+.button__primary:hover, .button__secondary:hover, .button__primary-dark:hover, .button__tertiary:hover {
   cursor: pointer;
 }
 
-.button__primary a, .button__secondary a, .button__primary-dark a {
+.button__primary a, .button__secondary a, .button__primary-dark a, .button__tertiary a {
   color: #f5f4f5;
   text-decoration: none;
   font-size: 16px;
@@ -855,6 +855,7 @@ template {
 
 .button__primary-dark {
   background: #523A34;
+  min-width: 180px;
 }
 
 .button__primary-dark:hover {
@@ -881,6 +882,27 @@ template {
 }
 
 .button__secondary:hover a {
+  color: #212121;
+}
+
+.button__tertiary {
+  background: none;
+  border: 2px solid #523A34;
+  min-width: 180px;
+}
+
+.button__tertiary a {
+  color: #523A34;
+}
+
+.button__tertiary:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(6%);
+          transform: translateY(6%);
+}
+
+.button__tertiary:hover a {
   color: #212121;
 }
 
@@ -1604,6 +1626,14 @@ template {
   background-size: 100% 2px;
 }
 
+#main ul li.active {
+  font-weight: 800;
+}
+
+#main ul li.active a {
+  font-weight: 800;
+}
+
 .icon {
   color: #212121;
   font-size: 20px;
@@ -2247,6 +2277,19 @@ th {
   .borrar-cuadro {
     padding: 2px 7px;
   }
+}
+
+.botones__carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.botones__carrito button {
+  margin: 3rem .5rem;
 }
 
 .cuadro {

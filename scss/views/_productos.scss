@@ -130,6 +130,15 @@
   }
 }
 
+.botones__carrito {
+  display: flex;
+  justify-content: center;
+  
+  button {
+    margin: 3rem .5rem;
+  }
+}
+
 .cuadro {
   border: 1px solid #e1e1e1;
   background: white;

@@ -95,6 +95,14 @@
   }
 }
 
+#main ul li.active { 
+  font-weight: 800;
+}
+
+#main ul li.active a { 
+  font-weight: 800;
+}
+
 //Iconos
 .icon {
   color: $primary-color-text;

@@ -25,7 +25,7 @@
 
   <!-- Menu de navegación -->
   <nav class="navbar">
-    <div class="content">
+    <div id="main" class="content">
       <div class="logo">
         <a href="../index.html">
           <h1>Arte<span>Impreso</span></h1>
@@ -35,11 +35,11 @@
         <div class="icon cancel-btn">
           <i class="fas fa-times"></i>
         </div>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="nuestroTrabajo.html">Nuestro Trabajo</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="cuenta.html">Cuenta</a></li>
+        <li><a id="inicio" href="../index.html">Inicio</a></li>
+        <li><a id="productos" href="productos.html">Productos</a></li>
+        <li><a id="nuestroTrabajo" href="nuestroTrabajo.html">Nuestro Trabajo</a></li>
+        <li><a id="contacto" href="contacto.html">Contacto</a></li>
+        <li><a id="cuenta" href="cuenta.html">Cuenta</a></li>
       </ul>
       <div class="icon menu-btn">
         <i class="fas fa-bars"></i>
@@ -77,10 +77,15 @@
             </thead>
             <tbody></tbody>
           </table>
-          
-          <button class="button__secondary">
-            <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
-          </button>
+          <div class="botones__carrito">
+            <button class="button__primary-dark">
+              <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+            </button>
+            <button class="button__primary-dark">
+              <a href="#" id="vaciar-carrito">Terminar Compra</a>
+            </button>
+          </div>
+
         </div>
       </li>
     </ul>
@@ -103,8 +108,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1900</span><mark>$850</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="1">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="1">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -118,8 +123,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1800</span><mark>$900</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="2">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="2">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -133,8 +138,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1000</span><mark>$700</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="3">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="3">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -148,8 +153,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1100</span><mark>$600</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="4">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="4">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -163,8 +168,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$900</span><mark>$700</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="5">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="5">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -178,8 +183,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1200</span><mark>$700</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="6">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="6">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -193,8 +198,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$800</span><mark>$600</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="7">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="7">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -208,8 +213,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$800</span><mark>$700</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="8">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="8">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -223,8 +228,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1500</span><mark>$1100</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="9">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="9">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -238,8 +243,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$900</span><mark>$700</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="10">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="10">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -253,8 +258,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$900</span><mark>$600</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="11">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="11">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -268,8 +273,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1500</span><mark>$1100</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="12">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="12">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -283,8 +288,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$700</span><mark>$600</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="13">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="13">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -298,8 +303,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1100</span><mark>$800</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="14">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="14">Agregar al carrito</a>
           </button>
         </div>
       </article>
@@ -313,8 +318,8 @@
           <div class="precio">
             <p class="precio__desc"><span>$1900</span><mark>1100</mark></p>
           </div>
-          <button class="button__secondary">
-            <a class="agregar-carrito" href="#" role="button" data-id="15">Agregar a carrito</a>
+          <button class="button__tertiary">
+            <a class="agregar-carrito" href="#" role="button" data-id="15">Agregar al carrito</a>
           </button>
         </div>
       </article>
