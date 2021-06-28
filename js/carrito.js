@@ -4,7 +4,7 @@ const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const terminarCompraBtn = document.querySelector('#terminar-compra');
 const listaCuadros = document.querySelector('#lista-cuadros');
-let precioTotal = 0;
+/* let precioTotal = 0; */
 
 cargarEventListeners();
 
@@ -40,7 +40,8 @@ function cargarEventListeners() {
 function agregarCuadro(e) {
   e.preventDefault();
   if (e.target.classList.contains('agregar-carrito')) {
-    const cuadroSeleccionado = e.target.parentElement.parentElement.parentElement;
+    const cuadroSeleccionado = e.target.parentElement.parentElement;
+    console.log(cuadroSeleccionado);
     leerDatosCuadro(cuadroSeleccionado);
     mensajeToast("Cuadro agregado al carrito","Arte Impreso");
   }
@@ -54,12 +55,12 @@ function eliminarCuadro(e) {
     //Elimina del arreglo por el data-id
     articulosCarrito = articulosCarrito.filter( cuadro => cuadro.id !== cuadroId );
     carritoHTML();
+ 
   }
 }
 
 //Leer los datos de cada cuadro
 function leerDatosCuadro(cuadro) {
-
   //Crea un arreglo con el contenido del cuadro actual
   const infoCuadro = {
     imagen: cuadro.querySelector('img').src,
@@ -67,10 +68,11 @@ function leerDatosCuadro(cuadro) {
     precio: cuadro.querySelector('.precio mark').textContent,
     id: cuadro.querySelector('a').getAttribute('data-id'),
     cantidad: 1
-  }
+  };
 
-  precioTotal += parseInt(infoCuadro.precio.slice(1));
-  console.log(precioTotal);
+/*   precioTotal += parseInt(infoCuadro.precio.slice(1));
+  console.log(precioTotal); */
+
   //Revisa si un elemento ya existe en el carrito
   const existe = articulosCarrito.some( cuadro => cuadro.id === infoCuadro.id );
   if (existe) {
@@ -86,17 +88,17 @@ function leerDatosCuadro(cuadro) {
     articulosCarrito = [...cuadros];
   } else {
     //Se agrega el cuadro al carrito
-     //Agregando cuadros al arreglo del carrito
+    //Agregando cuadros al arreglo del carrito
     articulosCarrito = [...articulosCarrito, infoCuadro];
   }
-  carritoHTML()
+  carritoHTML();
 }
 
 //Muestra el carrito de compras en el html
 function carritoHTML() {
   //Limpiar html
   limpiarHTML();
-  let totalCompra = 0;
+
   articulosCarrito.forEach( cuadro => {
     const { imagen, titulo, precio, cantidad, id } = cuadro;
     const row = document.createElement('tr');
@@ -106,11 +108,8 @@ function carritoHTML() {
       <td>${precio}</td>
       <td>${cantidad}</td>
       <td><a href="#" class="borrar-cuadro" data-id="${id}"> X </a></td>`;
-
     contenedorCarrito.appendChild(row);
-    
   });
-  carritoMontoTotal(precioTotal);
 }
 
 //ELimina elementos del html del carrito
@@ -144,7 +143,7 @@ function carritoSinMensaje() {
   contenedorCarrito.appendChild(row);
 }
 
-function carritoMontoTotal(total) {
+/* function carritoMontoTotal(total) {
   const row = document.createElement('tr');
   row.innerHTML = `
     <td></td>
@@ -155,7 +154,7 @@ function carritoMontoTotal(total) {
   `;
   contenedorCarrito.appendChild(row);
 }
-
+ */
 function mensajeToast(mensaje, titulo) {
   toastr.options = {
     "closeButton": false,

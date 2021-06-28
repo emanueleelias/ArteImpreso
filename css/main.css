@@ -808,7 +808,7 @@ template {
 /* --- 
     BOTONES
 --- */
-.button__primary, .button__secondary, .button__primary-dark, .button__tertiary {
+.button__primary, .button__secondary, .button__primary-dark, .button__tertiary, .button__tertiary-dark {
   height: 4.2rem;
   min-width: 150px;
   border: none;
@@ -821,16 +821,16 @@ template {
 }
 
 @media (max-width: 767px) {
-  .button__primary, .button__secondary, .button__primary-dark, .button__tertiary {
+  .button__primary, .button__secondary, .button__primary-dark, .button__tertiary, .button__tertiary-dark {
     height: 5rem;
   }
 }
 
-.button__primary:hover, .button__secondary:hover, .button__primary-dark:hover, .button__tertiary:hover {
+.button__primary:hover, .button__secondary:hover, .button__primary-dark:hover, .button__tertiary:hover, .button__tertiary-dark:hover {
   cursor: pointer;
 }
 
-.button__primary a, .button__secondary a, .button__primary-dark a, .button__tertiary a {
+.button__primary a, .button__secondary a, .button__primary-dark a, .button__tertiary a, .button__tertiary-dark a {
   color: #f5f4f5;
   text-decoration: none;
   font-size: 16px;
@@ -889,6 +889,19 @@ template {
   background: none;
   border: 2px solid #523A34;
   min-width: 180px;
+  padding: .8rem;
+  text-decoration: none;
+  color: #523A34;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
 }
 
 .button__tertiary a {
@@ -903,6 +916,49 @@ template {
 }
 
 .button__tertiary:hover a {
+  color: #212121;
+}
+
+.button__tertiary-dark {
+  background: #523A34;
+  border: 2px solid #523A34;
+  min-width: 150px;
+  padding: .8rem;
+  text-decoration: none;
+  color: #f5f4f5;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .button__tertiary-dark {
+    height: 3.8rem;
+  }
+}
+
+.button__tertiary-dark a {
+  color: #523A34;
+}
+
+.button__tertiary-dark:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(6%);
+          transform: translateY(6%);
+}
+
+.button__tertiary-dark:hover a {
   color: #212121;
 }
 
@@ -2250,7 +2306,7 @@ td, th {
   border: 1px solid #523A34;
   border-radius: 5px;
   padding: 20px;
-  min-height: 400px;
+  min-height: 200px;
   min-width: 300px;
 }
 
@@ -2271,7 +2327,7 @@ td, th {
 .borrar-cuadro {
   background-color: red;
   border-radius: 50%;
-  padding: 5px 10px;
+  padding: 4px 10px;
   text-decoration: none;
   color: white;
   font-weight: bold;
