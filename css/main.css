@@ -1574,6 +1574,11 @@ template {
   color: #F2DD6E;
 }
 
+.navbar.sticky #main ul li.active a {
+  font-weight: 800;
+  color: #F2DD6E;
+}
+
 .navbar .logo a {
   text-decoration: none;
 }
@@ -1632,6 +1637,7 @@ template {
 
 #main ul li.active a {
   font-weight: 800;
+  color: #212121;
 }
 
 .icon {
@@ -2161,8 +2167,7 @@ template {
   }
 }
 
-td,
-th {
+td, th {
   margin: 1rem 0;
   padding: 14px 10px;
   text-align: center;
@@ -2170,8 +2175,7 @@ th {
 }
 
 @media (max-width: 868px) {
-  td,
-  th {
+  td, th {
     padding: 14px 3px;
     margin: .2rem 0;
   }

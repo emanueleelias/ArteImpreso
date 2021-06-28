@@ -25,17 +25,16 @@
   }
 }
 
- td,
-  th {
-    margin: 1rem 0;
-    padding: 14px 10px;
-    text-align: center;
-    border-bottom: 1px solid #E1E1E1;
+td, th {
+  margin: 1rem 0;
+  padding: 14px 10px;
+  text-align: center;
+  border-bottom: 1px solid #E1E1E1;
 
-    @media (max-width: 868px) {
-      padding: 14px 3px;
-      margin: .2rem 0;
-    }
+  @media (max-width: 868px) {
+    padding: 14px 3px;
+    margin: .2rem 0;
+  }
 }
 
 .carrito-compras {

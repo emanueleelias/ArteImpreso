@@ -46,6 +46,11 @@
       color: $primary-color;
     }
   }
+
+  #main ul li.active a { 
+    font-weight: 800;
+    color: $primary-color;
+  }
 }
 
 //Logo
@@ -97,10 +102,12 @@
 
 #main ul li.active { 
   font-weight: 800;
+  //border-bottom: 2px solid #88b2ff;
 }
 
 #main ul li.active a { 
   font-weight: 800;
+  color: $primary-color-text;
 }
 
 //Iconos
